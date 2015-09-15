@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html>
+	<head>
+		<title>Tic Tac Toe</title>
+		<style type="text/css" media="all">
+			body {
+				background: light-gray;
+				padding: 0px;
+				font-family: sans-serif;
+			}
+			
+			.container {
+				margin:0px auto 0px auto;
+				width: 500px;
+				background: white;
+			}
+			
+			header {
+				text-align: center;
+			}
+			
+			.board-con {
+				margin-left:auto;
+				margin-right:auto;
+				width:300px;
+			}
+			
+			#board {
+				width: 100%;
+			}
+			
+			button {
+				width: 100%;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="container">
+			<header>
+				<h1>A simple Tic Tac Toe game</h1>
+				<p>Designed and programmed by Aaron Tagliaboschi</p>
+			</header>
+			
+			<div class="board-con">
+				<canvas id="board" width=300px height=300px></canvas>
+				
+				<div>
+					<button id="xstart">Computer First</button>
+					<button id="ostart">Player First</button>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" charset="utf-8" src="ttt.js"></script>
+	</body>
+
+</html>
