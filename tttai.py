@@ -34,7 +34,8 @@ def conv(board):
 def score(board):
 	"""This is the "score" algorithm for the minimax.
 	
-	Returns '1' if the computer won and '-1' if the player won. 0 otherwise."""
+	Returns '1' if the computer won and '-1' if the player won. 0 otherwise.
+	"""
 	#note, possible answer for tie?
 	for con in win:
 		#if all three of a win conndition match and aren't 0
@@ -102,7 +103,7 @@ def comMove(board):
 	for i in xrange(9):
 		if(not board[i]):
 			board[i]=1
-			answer = bestMove(board, -1,1)
+			answer = bestMove(board, -1)
 			board[i]=0
 			if(best < answer):
 				best = answer
